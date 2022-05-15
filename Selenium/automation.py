@@ -7,4 +7,5 @@ chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 chrome_browser = webdriver.Chrome(service=Service(
     ChromeDriverManager().install()), options=chrome_options)
-print('initial pull and push')
+chrome_browser.maximize_window()
+chrome_browser.get('https://demo.seleniumeasy.com/basic-first-form-demo.html')
